@@ -163,6 +163,10 @@ namespace Keyboard
 			bool alt = false, ctrl = false, shift = false;
 			switch (ShiftType)
 			{
+   				case Messaging.ShiftType.CTRL_ALT:
+					ctrl = true;
+					alt = true;
+					break;
 				case Messaging.ShiftType.ALT:
 					alt = true;
 					break;
@@ -206,6 +210,10 @@ namespace Keyboard
 			bool alt = false, ctrl = false, shift = false;
 			switch (ShiftType)
 			{
+      				case Messaging.ShiftType.CTRL_ALT:
+					ctrl = true;
+					alt = true;
+					break;
 				case Messaging.ShiftType.ALT:
 					alt = true;
 					break;
